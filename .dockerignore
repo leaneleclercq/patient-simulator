@@ -1,0 +1,61 @@
+# Environnement virtuel Python
+.venv/
+venv/
+env/
+.venv
+venv
+env
+
+# Fichiers de cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Tests (non nécessaires en production)
+tests/
+test_*.py
+*_test.py
+*.test.py
+pytest.ini
+
+# Scripts de test et développement
+test_*.sh
+*.log
+
+# Git et versioning
+.git/
+.gitignore
+.gitattributes
+
+# IDE et assistants
+.vscode/
+.idea/
+.claude/
+.cursor/
+*.swp
+*.swo
+*~
+
+# Documentation (optionnel - peut être gardé si nécessaire)
+README.md
+LICENSE
+docs/
+
+# Fichiers de configuration locale
+.env
+.env.local
+.env.*.local
+*.local
+
+# Fichiers temporaires
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
