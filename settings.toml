@@ -1,0 +1,33 @@
+# Configuration Patient Simulator
+# Toutes les valeurs peuvent être surchargées par variables d'environnement
+# prefixees par PATIENT_ (ex: PATIENT_FIRESTORE_DATABASE)
+
+# Service info
+SERVICE_NAME = "Patient Simulator"
+SERVICE_VERSION = "1.0.0"
+
+# Firestore
+FIRESTORE_DATABASE = "patient-simulator-db"
+
+# Limites de validation médicale (sécurité critique)
+MIN_GLUCOSE_LEVEL_MG_DL = 20.0
+MAX_GLUCOSE_LEVEL_MG_DL = 600.0
+MAX_INSULIN_DOSE_U = 10.0
+MAX_CARBS_PER_MEAL_G = 300.0
+
+# Valeurs initiales pour un patient sain
+INITIAL_GLUCOSE_LEVEL_MG_DL = 100.0
+
+# Constantes physiologiques (simulation metabolique)
+GLUCOSE_ABSORPTION_RATE_MG_PER_G_PER_MIN = 1.0
+INSULIN_ACTION_RATE_MG_PER_U_PER_MIN = 2.0
+INSULIN_DECAY_RATE_U_PER_MIN = 0.1
+LIVER_GLUCOSE_PRODUCTION_MG_PER_MIN = 0.05
+
+# Seuils temporels
+MIN_UPDATE_INTERVAL_MINUTES = 0.01
+
+# Rate Limiting (protection contre abus)
+RATE_LIMIT_ROOT = "200/minute"
+RATE_LIMIT_STATUS = "100/minute"
+RATE_LIMIT_ACTIONS = "60/minute"
